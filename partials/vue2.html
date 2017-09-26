@@ -1,0 +1,15 @@
+
+	<a href="#!/vue1">Go on Views one</a>
+		
+<br/>
+		<p>VUE 2</p>
+<br/>
+		<div ng-controller="MyFirstController">
+		    Nom : <br>
+				<input type="text" ng-model="ville"> {{ ville }}	
+
+					<ul>
+						<li ng-repeat="employes in Pilotes | filter : ville | orderBy : 'name' " > 
+						{{ employes.ville }}</li>
+					</ul>
+		</div>

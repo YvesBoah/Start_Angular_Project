@@ -1,0 +1,31 @@
+
+			<p>Vue 1 yeah</p>
+	
+<br/>
+	<a href="#!/vue2">Go on Views two</a>
+	<br/>
+	
+
+			
+			
+				Nom : <br>
+				<input type="text" ng-model="Nom"> {{ Nom }}	
+
+					<ul>
+						<li ng-repeat="employes in Pilotes | filter : Nom | orderBy : 'name' " > {{ employes.name }} - {{ employes.ville }}</li>
+					</ul>
+		   
+						<br/>
+					<!-- Formulaired'ajouts de Clients -->
+				
+				Nom du Client : <br/>
+				<input type="text" ng-model="NewsClient.Names"/><b> {{ NewsClient.Names }}</b><br/>
+				Ville du Client : <br/>
+				<input type="text" ng-model="NewsVille.Clients"/><b> {{ NewsVille.Clients }} </b><br/>
+				<br/>
+				<input type="submit" ng-click="ajouterClient()" value="Ajouter client ">
+				
+			<!-- Formulaire d'ajouts de Clients -->
+					
+
+		
