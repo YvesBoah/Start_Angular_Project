@@ -117,7 +117,7 @@ a:hover { transition: all 200ms ease-in-out; }
 .sidebar-menu {
   position: fixed;
   float: left;
-  width: 280px;
+  width: 200px;
   top: 0;
   left: 0;
   bottom: 0;
