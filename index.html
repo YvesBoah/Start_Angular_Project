@@ -24,6 +24,7 @@
 																// <!-- Création de Modules -->
 
 																	// Création des routes
+																	// Navigation des Page (SINGLE APPLICATION PAGES)
 																	TelApp.config(function($routeProvider){
 																		$routeProvider
 																		.when('/',{
@@ -33,7 +34,52 @@
 																		.when('/vue2',{
 																			templateUrl : 'partials/vue2.html',
 																			controller : 'MyFirstController'
+																		})  	
+																		.when('/vue3',{
+																			templateUrl : 'partials/vue3.html',
+																			controller : 'MyFirstController'
 																		})  
+																		.when('/vue4',{
+																			templateUrl : 'partials/vue4.html',
+																			controller : 'MyFirstController'
+																		}) 
+																		 .when('/vue5',{
+																			templateUrl : 'partials/vue5.html',
+																			controller : 'MyFirstController'
+																		})  
+																		  .when('/vue6',{
+																			templateUrl : 'partials/vue6.html',
+																			controller : 'MyFirstController'
+																		})  
+																		   .when('/vue7',{
+																			templateUrl : 'partials/vue7.html',
+																			controller : 'MyFirstController'
+																		})  
+																		    .when('/vue8',{
+																			templateUrl : 'partials/vue8.html',
+																			controller : 'MyFirstController'
+																		})  
+																		    .when('/vue9',{
+																			templateUrl : 'partials/vue9.html',
+																			controller : 'MyFirstController'
+																		})  
+																		    .when('/vue10',{
+																			templateUrl : 'partials/vue10.html',
+																			controller : 'MyFirstController'
+																		})  
+																		    .when('/vue11',{
+																			templateUrl : 'partials/vue11.html',
+																			controller : 'MyFirstController'
+																		})  
+																		    .when('/vue12',{
+                   templateUrl : 'partials/vue12.html',
+                   controller : 'MyFirstController'
+                  })  
+                    .when('/vue13',{
+																			templateUrl : 'partials/vue13.html',
+																			controller : 'MyFirstController'
+																		})  
+
 																		.otherwise({redirectTo : '/'});                 
 																	});
 																	// Création des routes
@@ -43,7 +89,82 @@
 <!-- Script Angular Js -->
 
 
-																<!-- Affichage des routes -->
+	
+
+															
+											<!-- Code De LA sidebar Start -->
+																								<!--  -->
+			<div class="container">
+			<div class="row">
+						<div class="col-lg-12 col-md-12 col-xs-12">
+							<div class="col-lg-1">
+					
+																<div class="page-container">
+
+																	<div class="sidebar-menu">
+																		<header class="logo"> <a href="" class="sidebar-icon"> <span class="fa fa-bell-o"></span> </a> <a href="#"> 
+																		<!-- <span id="logo" class="fa fa-html5 fa-5x"></span>  -->
+																			<img  src="views/yosh.png" height="60px" width="60px" alt="Logo"/> 
+																		</a> </header>
+																		<div style="border-top:1px solid rgba(69, 74, 84, 0.7)"></div>
+																		<div class="menu">
+																			<ul id="menu" >
+																				<li><a id="none" href="#!/vue1"><i class="fa fa-home"></i><span>Home</span></a></li>
+																				<li><a id="none" href="#!/vue2"><i class="fa fa-share-alt"></i><span>Share</span><span class="fa fa-angle-right" style="float: right"></span></a>
+																					<ul>
+																						<li><a id="none" href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+																						<li><a id="none" href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+																						<li><a id="none" href="#"><i class="fa fa-pinterest"></i> Pinterest</a></li>
+																					</ul>
+																				</li>
+																				<li><a  id="none" href="#!/vue3"><i class="fa fa-anchor"></i><span>Category</span><span class="fa fa-angle-double-right" style="float: right"></span></a>
+																					<ul>
+																						<li style="width: 120px" ><a id="none" href="#vue4">Vue 4<i class="fa fa-angle-right" style="float: right; margin-right: -8px; margin-top: 2px;"></i></a>
+																							<ul>
+																								<li><a id="none" href="#!/vue5">Vue 5</a></li>
+																								<li><a id="none" href="#!/vue6">Vue 6</a></li>
+																								<li><a id="none" href="#!/vue7">Vue 7</a></li>
+																							</ul>
+																						</li>
+																						<li><a id="none" href="#!/vue8">Vue 8</a></li>
+																					</ul>
+																				</li>
+																				<li><a id="none" href="#!/vue9"><i class="fa fa-envelope"></i><span>About</span><span class="fa fa-angle-right" style="float: right"></span></a>
+																					<ul>
+																						<li><a id="none" href="#!/vue10">Contact us</a></li>
+																						<li><a id="none" href="#!/vue11">About us</a></li>
+																					</ul>
+																				</li>
+
+																				<li><a id="none" href="#!/vue12"><i class="fa fa-history"></i><span>Blog</span></a></li>
+																				<li><a id="none" href="#!/vue13"><i class="fa fa-gears"></i><span>Settings</span></a></li>
+
+																				<!-- retour a la ligne pour espacer la partie " Suivez Nous ! "-->
+																				<br><br>	<br><br>	<br><br>	<br>
+
+																				<!-- SUIVEZ NOUS ! -->
+																				<!--  -->
+
+																				<h3 class=" text-center"><i> Suivez Nous !</i></h3>
+																				<a href=""><img  src="views/F.png" height="60px" width="60px" alt="Logo"/> </a>
+																				<a href="">	<img  src="views/L.png" height="60px" width="60px" alt="Logo"/></a>
+																				<a href=""><img  src="views/T.png" height="60px" width="60px" alt="Logo"/> </a>
+
+																				<!--  -->
+																				<!-- SUIVEZ NOUS ! -->
+																					
+																				 
+																					
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+
+
+										<!-- div de bootstrap -->
+							</div> <!-- col 1 bootstrap -->		
+							<div class="col-lg-11">				
+											<!-- Affichage des routes -->
 																<!--  -->
 
 																<div ng-view></div>
@@ -51,57 +172,13 @@
 																<!--  -->
 																<!-- Affichage des routes -->
 							
-											<!-- Code De LA sidebar Start -->
-																								<!--  -->
-			<div class="container-fluid">
-			<div class="row">
-						<div class="col-lg-12 col-md-12 col-xs-12"></div>
-			</div>
+							</div> <!-- div col 9 -->
+	</div> <!-- col 12 bootstrap -->	
+			</div> <!-- row1 bootstrap -->	
   ...
-</div>
-																<div class="page-container">
+</div>   <!-- container 1 bootstrap -->	
 
-																	<div class="sidebar-menu">
-																		<header class="logo"> <a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="#"> <span id="logo" class="fa fa-html5 fa-5x"></span> 
-																			<!--<img id="logo" src="" alt="Logo"/>--> 
-																		</a> </header>
-																		<div style="border-top:1px solid rgba(69, 74, 84, 0.7)"></div>
-																		<div class="menu">
-																			<ul id="menu" >
-																				<li><a id="none" href="#"><i class="fa fa-home"></i><span>Home</span></a></li>
-																				<li><a id="none" href="#"><i class="fa fa-share-alt"></i><span>Share</span><span class="fa fa-angle-right" style="float: right"></span></a>
-																					<ul>
-																						<li><a id="none" href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
-																						<li><a id="none" href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
-																						<li><a id="none" href="#"><i class="fa fa-pinterest"></i> Pinterest</a></li>
-																					</ul>
-																				</li>
-																				<li><a  id="none" href="#"><i class="fa fa-anchor"></i><span>Category</span><span class="fa fa-angle-double-right" style="float: right"></span></a>
-																					<ul>
-																						<li style="width: 120px" ><a id="none" href="#">Item 1<i class="fa fa-angle-right" style="float: right; margin-right: -8px; margin-top: 2px;"></i></a>
-																							<ul>
-																								<li><a id="none" href="#">Item 1.1</a></li>
-																								<li><a id="none" href="#">Item 1.2</a></li>
-																								<li><a id="none" href="#">yeah</a></li>
-																							</ul>
-																						</li>
-																						<li><a id="none" href="#">Item 2</a></li>
-																					</ul>
-																				</li>
-																				<li><a id="none" href="#"><i class="fa fa-envelope"></i><span>About</span><span class="fa fa-angle-right" style="float: right"></span></a>
-																					<ul>
-																						<li><a id="none" href="#">Contact us</a></li>
-																						<li><a id="none" href="#">About us</a></li>
-																					</ul>
-																				</li>
-
-																				<li><a id="none" href="#"><i class="fa fa-history"></i><span>Blog</span></a></li>
-																				<li><a id="none" href="#"><i class="fa fa-gears"></i><span>Settings</span></a></li>
-																			</ul>
-																		</div>
-																	</div>
-																</div>
-
+          <!-- div de bootstrap -->
 																<!--  -->
 											<!-- Code De LA sidebar End -->
 

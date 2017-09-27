@@ -3,11 +3,14 @@
 html,
 body {
   height: 100%;
-  font-family: "Roboto";
-  
+  font-family: "Roboto , Tahoma";  
 }
+
 #none{
   text-decoration: none;
+}
+span,li{
+  font-size: 1.2em;
 }
 a,
 a:hover,
@@ -16,7 +19,7 @@ a:active { text-decoration: none; }
 a {
   color: #008DE7;
   font-style: italic;
-  font-weight: 700;
+    font-weight: 700;
 }
 
 a:hover { transition: all 200ms ease-in-out; }
